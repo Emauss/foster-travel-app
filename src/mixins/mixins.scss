@@ -1,0 +1,22 @@
+/* MIXINS */
+@mixin hideInput {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+@mixin breakpoint($point) {
+  @if $point == 992 {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point == 800 {
+    @media (max-width: 800px) {
+      @content;
+    }
+  } @else if $point == 767 {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
