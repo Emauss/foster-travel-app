@@ -10,6 +10,12 @@ body {
   font-family: $primaryFont;
 }
 
+p,
+small,
+article {
+  font-family: $secondaryFont;
+}
+
 img {
   max-width: 100%;
 }

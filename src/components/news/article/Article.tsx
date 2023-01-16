@@ -1,5 +1,5 @@
-import { IArticle } from "../../interfaces/api/IArticle";
-import { Excerpt } from "./Excerpt";
+import { IArticle } from "../../../interfaces/api/IArticle";
+import { Excerpt } from "../excerpt/Excerpt";
 
 export const Article = ({ article }: { article: IArticle }) => {
   return (

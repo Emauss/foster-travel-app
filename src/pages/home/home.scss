@@ -1,4 +1,5 @@
 @import "../../themes/theme.scss";
+@import "../../mixins/mixins.scss";
 
 .home-entry {
   &-title {
@@ -46,6 +47,29 @@
             bottom: 0.25rem;
           }
           font-size: 1.5rem;
+        }
+      }
+
+      @include breakpoint(767) {
+        height: auto;
+        padding: 0 0 0.5rem;
+        display: block;
+
+        img {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .article {
+          font-size: 1rem;
+          margin: {
+            left: 1.25rem;
+            right: 1rem;
+          }
+
+          &-title {
+            font-size: 1.125rem;
+          }
         }
       }
     }
