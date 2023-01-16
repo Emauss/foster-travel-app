@@ -1,5 +1,5 @@
-import axios from "axios";
-import { INews } from "../interfaces/api/INews";
+import axios from 'axios';
+import { INews } from '../interfaces/api/INews';
 
 export const getNews = async (country: string | undefined, pageSize: number | undefined): Promise<INews> => {
   return await axios

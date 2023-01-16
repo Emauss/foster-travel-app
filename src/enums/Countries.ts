@@ -1,5 +1,5 @@
 export enum Countries {
-  PL = "Polska",
-  CZ = "Czechy",
-  DE = "Niemcy",
+  PL = 'Polska',
+  CZ = 'Czechy',
+  DE = 'Niemcy',
 }

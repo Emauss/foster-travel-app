@@ -1,5 +1,5 @@
-import { IArticle } from "../interfaces/api/IArticle";
-import { IFiltersValue } from "../interfaces/filters/IFiltersValue";
+import { IArticle } from '../interfaces/api/IArticle';
+import { IFiltersValue } from '../interfaces/filters/IFiltersValue';
 
 export type GlobalData = {
   allData: IArticle[];

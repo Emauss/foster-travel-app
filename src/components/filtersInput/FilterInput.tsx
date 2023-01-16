@@ -1,23 +1,23 @@
-import { useId } from "react";
-import { useGlobalContext } from "../../context/DataContext";
-import { IFilterInput } from "../../interfaces/filters/IFilterInput";
-import "./filterInput.scss";
+import { ReactElement, useId } from 'react';
+import { useGlobalContext } from '../../context/DataContext';
+import { IFilterInput } from '../../interfaces/filters/IFilterInput';
+import './filterInput.scss';
 
-export const FilterInput = ({ name, type, value }: IFilterInput) => {
+export const FilterInput = ({ name, type, value }: IFilterInput): ReactElement => {
   const id = useId();
   const { filters, setFilters } = useGlobalContext();
 
   return (
     <>
       <input
-        type="radio"
+        type='radio'
         name={type}
         value={value}
         id={id}
         defaultChecked={filters.country === value || filters.pageSize === value}
-        onChange={(el) => {
+        onChange={(el): void => {
           const input = el.target;
-          if (input.name === "country") {
+          if (input.name === 'country') {
             setFilters({ ...filters, country: input.value });
           } else {
             setFilters({ ...filters, pageSize: parseInt(input.value) });
