@@ -1,0 +1,53 @@
+@import "../../themes/theme.scss";
+
+.home-entry {
+  &-title {
+    text-align: center;
+    font-size: 1.875rem;
+  }
+}
+
+.home-news {
+  &-content {
+    &-single {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $darkGray;
+      border: 0.125rem solid $gray;
+      margin-bottom: 1.5rem;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0rem 0rem 0.5rem $shadowDark;
+      transition: $transition;
+      height: 18.75rem;
+
+      &:hover {
+        transition: $transition;
+        box-shadow: 0rem 0rem 0.75rem $shadowHover;
+      }
+
+      img {
+        width: 30%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+      .article {
+        margin: {
+          left: 2rem;
+          right: 2rem;
+        }
+        font-size: 1.25rem;
+
+        &-title {
+          margin: {
+            top: 0;
+            bottom: 0.25rem;
+          }
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
